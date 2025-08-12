@@ -1,5 +1,7 @@
 package August11_DSA01;
 
+import java.util.Scanner;
+
 abstract class Vehical {
 	abstract void Wheels();
 	abstract void Color();
@@ -49,7 +51,7 @@ class Cars extends Vehical {
 
 	@Override
 	void Engine() {
-		print("V8 Engine");
+		print("V8");
 	}
 
 	@Override
@@ -96,8 +98,15 @@ class Bike extends Cars{
 		super.Modification();
 	}
 }
+class Cycle{
+	public String Brand;
+	public int price;
+	public boolean Gearbox;
+}
+
 public class Vehicals {
 	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
 		Cars c = new Cars();
 		c.Brand();
 		c.Model();
@@ -113,6 +122,12 @@ public class Vehicals {
 		b.Color();
 		b.Wheels();
 		b.Modification();
+
+		Cycle cy = new Cycle();
+		System.out.println("Enter the ");
+		cy.Brand = in.next();
+		System.out.println(cy.Brand);
+
 	}
 }
 
