@@ -11,7 +11,7 @@ class ArrayListFunctions {
 		System.out.println("ArrayList: " + list);
 
 		list.remove("pineapple");
-		list.remove(0);
+		list.removeFirst();
 		System.out.println("After removal: " + list);
 
 		list.set(0, "Mango");
